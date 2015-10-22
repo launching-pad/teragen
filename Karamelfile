@@ -4,5 +4,7 @@ dependencies:
     local:
       - wordcount::install
     global:
+      - generator::experiment
+      - flink::taskmanager
 
 
