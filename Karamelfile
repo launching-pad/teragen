@@ -1,0 +1,8 @@
+dependencies:
+  - recipe: wordcount::install
+  - recipe: wordcount::experiment
+    local:
+      - wordcount::install
+    global:
+
+
