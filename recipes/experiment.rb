@@ -5,11 +5,10 @@ script 'run_experiment' do
   group node['wordcount']['group']
   interpreter "bash"
   code <<-EOM
-/srv/hadoop/bin/hdfs dfs -rm -r -f /counts
 
-cd /usr/local/flink
+mkdir ~/teragen
 
-./bin/flink run -p #{node.hadoop.dn.public_ips.size} -j ./examples/flink-java-examples-0.9.1-WordCount.jar hdfs:///words/ hdfs://#{node.hadoop.nn.public_ips[0]}:29211/counts
+/srv/hadoop/bin/hadoop jar /srv/hadoop-2.4.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.4.0.jar teragen 1000 ~/teragen
   EOM
 end
 
