@@ -1,12 +1,12 @@
-name             'wordcount'
-maintainer       "wordcount"
-maintainer_email "k.hakimzadeh@gmail.com"
+name             'teragen'
+maintainer       "teragen"
+maintainer_email "shelanrc |at| gmail |dot| com"
 license          "Apache v2.0"
 description      'Installs/Configures/Runs wordcount'
 version          "0.1"
 
-recipe            "wordcount::install", "Experiment setup for wordcount"
-recipe            "wordcount::experiment",  "configFile=; Experiment name: experiment"
+recipe            "teragen::install", "Experiment setup for wordcount"
+recipe            "teragen::experiment",  "configFile=; Experiment name: experiment"
 
 
 depends "kagent"
@@ -19,11 +19,11 @@ end
 
 
 
-attribute "wordcount/group",
+attribute "teragen/group",
 :description => "group parameter value",
 :type => "string"
 
-attribute "wordcount/user",
+attribute "teragen/user",
 :description => "user parameter value",
 :type => "string"
 
