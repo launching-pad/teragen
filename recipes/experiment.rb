@@ -5,7 +5,7 @@ script 'run_experiment' do
   group node['teragen']['group']
   interpreter "bash"
   code <<-EOM
-
+/srv/hadoop/bin/hadoop fs -rmr /srv
 /srv/hadoop-2.4.0/bin/hadoop jar /srv/hadoop-2.4.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.4.0.jar teragen 100 /srv/teragen
   EOM
 end
