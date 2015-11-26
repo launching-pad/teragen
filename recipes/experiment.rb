@@ -1,15 +1,15 @@
 
 directory '/srv/teragen' do
-  owner node['wordcount']['user']
-  group node['wordcount']['group']
+  owner node['teragen']['user']
+  group node['teragen']['group']
   mode '0755'
   action :create
 end
 
 script 'run_experiment' do
   cwd "/tmp"
-  user node['wordcount']['user']
-  group node['wordcount']['group']
+  user node['teragen']['user']
+  group node['teragen']['group']
   interpreter "bash"
   code <<-EOM
 
