@@ -1,8 +1,8 @@
 dependencies:
-  - recipe: wordcount::install
-  - recipe: wordcount::experiment
+  - recipe: teragen::install
+  - recipe: teragen::experiment
     local:
-      - wordcount::install
+      - teragen::install
     global:
       - generator::experiment
       - flink::taskmanager
