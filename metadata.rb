@@ -27,4 +27,8 @@ attribute "teragen/user",
 :description => "user parameter value",
 :type => "string"
 
+attribute "teragen/records",
+:description => "number of records to be generated",
+:type => "string"
+
 
