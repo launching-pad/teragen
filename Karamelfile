@@ -1,10 +1,6 @@
 dependencies:
-  - recipe: teragen::install
   - recipe: teragen::experiment
-    local:
-      - teragen::install
     global:
-      - generator::experiment
-      - flink::taskmanager
+      - hadoop::dn
 
 
