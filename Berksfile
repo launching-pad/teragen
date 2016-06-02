@@ -6,4 +6,3 @@ source 'https://supermarket.chef.io'
 cookbook 'kagent', github: 'karamelchef/kagent-chef', branch: 'master'
 metadata
 cookbook 'hadoop', github: 'karamel-lab/apache-hadoop-chef'
-cookbook 'flink', github: 'hopshadoop/flink-chef'
